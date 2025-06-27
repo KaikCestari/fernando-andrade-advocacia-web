@@ -12,11 +12,12 @@ const About = () => {
             <div className="relative inline-block mb-8">
               <AspectRatio ratio={3/4} className="w-80 mx-auto">
                 <img 
-                  src="/lovable-uploads/783bf0e1-31d3-490f-8328-b63abb99434b.png" 
+                  src="/lovable-uploads/798c5dfd-b1c5-4f96-b625-6422d1238091.png" 
                   alt="Fernando Andrade - Advogado" 
                   className="w-full h-full object-cover object-center rounded-lg shadow-lg"
                   onError={(e) => {
                     console.log('Erro ao carregar imagem:', e);
+                    console.log('Tentando carregar imagem do caminho:', e.target.src);
                   }}
                   onLoad={() => {
                     console.log('Imagem carregada com sucesso');
