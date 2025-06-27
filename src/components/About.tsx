@@ -1,4 +1,5 @@
 
+
 import { User, Award, BookOpen, Scale } from "lucide-react";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 
@@ -12,9 +13,9 @@ const About = () => {
             <div className="relative inline-block mb-8">
               <AspectRatio ratio={3/4} className="w-80 mx-auto">
                 <img 
-                  src="/lovable-uploads/798c5dfd-b1c5-4f96-b625-6422d1238091.png" 
+                  src="/lovable-uploads/783bf0e1-31d3-490f-8328-b63abb99434b.png" 
                   alt="Fernando Andrade - Advogado" 
-                  className="w-full h-full object-cover object-center rounded-lg shadow-lg"
+                  className="w-full h-full object-cover object-top rounded-lg shadow-lg"
                 />
               </AspectRatio>
               <div className="absolute -bottom-4 -right-4 bg-wine-600 p-3 rounded-full">
@@ -101,3 +102,4 @@ const About = () => {
 };
 
 export default About;
+
