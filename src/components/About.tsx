@@ -1,5 +1,4 @@
 
-
 import { User, Award, BookOpen, Scale } from "lucide-react";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 
@@ -15,7 +14,13 @@ const About = () => {
                 <img 
                   src="/lovable-uploads/783bf0e1-31d3-490f-8328-b63abb99434b.png" 
                   alt="Fernando Andrade - Advogado" 
-                  className="w-full h-full object-cover object-top rounded-lg shadow-lg"
+                  className="w-full h-full object-cover object-center rounded-lg shadow-lg"
+                  onError={(e) => {
+                    console.log('Erro ao carregar imagem:', e);
+                  }}
+                  onLoad={() => {
+                    console.log('Imagem carregada com sucesso');
+                  }}
                 />
               </AspectRatio>
               <div className="absolute -bottom-4 -right-4 bg-wine-600 p-3 rounded-full">
@@ -102,4 +107,3 @@ const About = () => {
 };
 
 export default About;
-
